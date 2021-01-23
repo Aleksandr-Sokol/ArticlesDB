@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Добавление новой статьи</title>
+</head>
+    <a href="/">Home</a>
+    <hl>Добавление статьи</hl>
+    <form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" vаluе="Добавить">
+    </form>
+<body>
+
+</body>
+</html>

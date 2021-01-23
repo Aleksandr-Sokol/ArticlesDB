@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset =utf-8">
+    <title>Статьи</title>
+</head>
+
+<body>
+    <div>
+        <a href="/add/journal">Добавить журнал</a>
+        <a href="/add/author">Добавить автора</a>
+        <a href="/add/article">Добавить статью</a>
+    </div>
+    <hl>----- СПИСОК ОПУБЛИКОВАННЫХ СТАТЕЙ -----</hl>
+    {% for a in art %}
+    <div>
+        <h2>{{ a.name }}</h2>
+        <h3>{{ a.journal}}, год {{ a.year}}</h3>
+        <h3>{{ a.authors}}</h3>
+    </div>
+    {% endfor %}
+    <hl>----- СПИСОК АВТОРОВ СТАТЕЙ -----</hl>
+    {% for a in avt %}
+    <div>
+        <h3>{{ a.family }} {{a.name}}</h3>
+    </div>
+    {% endfor %}
+
+</body>
+</html>
